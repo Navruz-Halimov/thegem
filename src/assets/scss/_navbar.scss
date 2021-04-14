@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 .navbar {
   &-inner {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
   }
   &-link {
     display: inline-block;
@@ -84,7 +81,11 @@
   }
 
 }
-
+.hamburger{
+  font-size: 32px;
+  color:#fff;
+  text-align: right;
+}
 @media screen and (max-width:992px){
     body{
         background-color: red;
@@ -93,4 +94,13 @@
     right:10% !important;
     left: auto !important;
     } 
+}
+@media screen and ( max-width:768px){
+  .navbar-menu{
+    display: block !important;
+  }
+}
+.block {
+  display: block;
+  text-align: center;
 }

@@ -1,13 +1,12 @@
-/* eslint-disable vue/valid-v-bind */
 <template>
   <div
     class="navbar"
-    :class="{nota:some}"
+    :class="{ nota: some }"
   >
     <div class="container">
       <div
         id="navbar"
-        class="navbar-inner d-none d-md-block"
+        class="navbar-inner"
       >
         <div class="row align-items-xl-center">
           <div class="text-center text-xl-left col-xl-3">
@@ -20,9 +19,15 @@
                 alt=""
               >
             </router-link>
+            <i
+              class="fa fa-bars hamburger"
+              @click="display=!display"
+            />
           </div>
-          <div class="col-xl-9 d-flex justify-center justify-sm-center d-xl-block ">
-            <ul class="navbar-menu">
+          <div
+            class="col-xl-9 d-flex justify-center justify-sm-center d-xl-block"
+          >
+            <ul :class="[{block:display},'navbar-menu']">
               <li class="navbar-menu__item">
                 <router-link
                   class="navbar-menu__link"
@@ -120,9 +125,6 @@
         </div>
       </div>
     </div>
-    <p style="position:fixed;">
-      <!-- {{ windowTop }} -->
-    </p>
   </div>
 </template>
 
@@ -131,10 +133,12 @@ export default {
   data() {
     return {
       showModal: false,
-       windowTop: 0,some:false,
-    }
+      windowTop: 0,
+      some: false,
+      display: false
+    };
   },
- mounted() {
+  mounted() {
     window.addEventListener("scroll", this.onScroll);
   },
   beforeDestroy() {
@@ -143,28 +147,28 @@ export default {
   methods: {
     onScroll(e) {
       this.windowTop = e.target.documentElement.scrollTop;
-      if(this.windowTop>100){
-        this.some=true;
-        console.log({ top: this.windowTop,},this.some);
-      }else{
-        this.some=false;
+      if (this.windowTop > 100) {
+        this.some = true;
+        console.log({ top: this.windowTop }, this.some);
+      } else {
+        this.some = false;
 
-        console.log("this is not gonna happen",this.some)
+        console.log("this is not gonna happen", this.some);
       }
     }
   }
-}
+};
 </script>
 <style scoped lang="scss">
-.nota{
-  position: fixed;
-  background-color: #f7f3fc;
-  width: 100%;
-  .navbar-menu__link{
-    color: #030080 !important;
-    &:hover{
-      color: #ff6a6d !important;
-    }
-  }
-}
+// .nota {
+//   position: fixed;
+//   background-color: #f7f3fc;
+//   width: 100%;
+//   .navbar-menu__link {
+//     color: #030080 !important;
+//     &:hover {
+//       color: #ff6a6d !important;
+//     }
+//   }
+// }
 </style>
