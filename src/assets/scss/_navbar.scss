@@ -7,6 +7,11 @@
     height: 40px;
   }
   &-mobile {
+    &__inner {
+      position: fixed;
+      width: 100%;
+      top: 88px;
+    }
     &__header {
       display: flex;
       justify-content: space-between;
@@ -17,10 +22,10 @@
     &__menu {
       position: relative;
       left: -120%;
-      background-color: red;
+      background-color: #8261e2;
       transition: 1s all linear;
       &-open {
-        left: -30%;
+        left: 0%;
         transition: all 1s ease;
       }
     }
@@ -28,8 +33,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 100px;
+      padding-top: 40px;
       padding-bottom: 100px;
+      width: 100%;
     }
     &__link {
       display: block;
