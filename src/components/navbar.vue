@@ -114,60 +114,59 @@
           </button>
         </div>
       </div>
-      <div class="container">
-        <div class="navbar-mobile__inner">
-          <div
-            id="menu__close"
-            :class="[
-              'navbar-mobile__menu',
-              { 'navbar-mobile__menu-open': toggle },
-            ]"
-          >
-            <ul class="navbar-mobile__list">
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Home
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Courses
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Services
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Teachers
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Pricing
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Blog
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  Contact
-                </router-link>
-              </li>
-              <li class="navbar-mobile__item">
-                <router-link class="navbar-mobile__link" to="">
-                  search
-                </router-link>
-              </li>
-            </ul>
-          </div>
+      <div class="navbar-mobile__inner">
+        <div
+          id="menu__close"
+          :class="[
+            'navbar-mobile__menu',
+            { 'navbar-mobile__menu-open': toggle },
+          ]"
+        >
+          <ul class="navbar-mobile__list">
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Home
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Courses
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Services
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Teachers
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Pricing
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Blog
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                Contact
+              </router-link>
+            </li>
+            <li class="navbar-mobile__item">
+              <router-link class="navbar-mobile__link" to="">
+                search
+              </router-link>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="container"></div>
     </div>
   </div>
 </template>
@@ -182,7 +181,7 @@ export default {
       scroll: false,
       display: false,
       toggle: false,
-      newImageUrl: "logo_white",
+      newImageUrl: "logo_white"
     };
   },
   mounted() {
@@ -208,15 +207,19 @@ export default {
         this.newImageUrl = "logo_white";
         this.scroll = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>
+
 <style scoped lang="scss">
 .navbaronscroll {
   position: fixed;
-  background-color: #f7f3fc;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
   width: 100%;
+  z-index: 9999;
   .navbar-menu__link {
     color: #030080 !important;
     &:hover {

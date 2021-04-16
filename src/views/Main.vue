@@ -1,16 +1,18 @@
 <template>
   <div class="main__wrapper">
     <navbar />
-    <header class="header" />
+    <middle />
   </div>
 </template>
 
 <script>
 import navbar from "@/components/navbar";
+import middle from "@/components/header";
 export default {
   components: {
     navbar,
-  },
+    middle
+  }
 };
 </script>
 
@@ -20,6 +22,6 @@ export default {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  height: 5000px;
+  margin-bottom: 400px;
 }
 </style>
