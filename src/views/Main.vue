@@ -2,16 +2,19 @@
   <div class="main__wrapper">
     <navbar />
     <middle />
+    <!-- <something /> -->
   </div>
 </template>
 
 <script>
 import navbar from "@/components/navbar";
 import middle from "@/components/header";
+// import something from "@/components/something";
 export default {
   components: {
     navbar,
-    middle
+    middle,
+    // something,
   }
 };
 </script>
