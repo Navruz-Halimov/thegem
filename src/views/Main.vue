@@ -2,19 +2,22 @@
   <div class="main__wrapper">
     <navbar />
     <middle />
-    <!-- <something /> -->
+    <courses />
+    <gototop />
   </div>
 </template>
 
 <script>
 import navbar from "@/components/navbar";
 import middle from "@/components/header";
-// import something from "@/components/something";
+import gototop from "@/components/gototop";
+import courses from '@/components/courses';
 export default {
   components: {
     navbar,
     middle,
-    // something,
+    gototop,
+    courses,
   }
 };
 </script>
@@ -23,8 +26,8 @@ export default {
 .main__wrapper {
   background-image: url("../assets/images/1.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+  background-position: top center;
+  background-size: contain;
   margin-bottom: 400px;
 }
 </style>
