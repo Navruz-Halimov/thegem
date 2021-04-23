@@ -113,7 +113,6 @@ export default {
     color: #fff;
     letter-spacing: 0;
     font-size: 90px;
-    // font-weight: 700;
   }
   &-second {
     line-height: 70px;
