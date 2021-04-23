@@ -33,7 +33,7 @@
         </div>
         <div class="col-md-4">
             <kinesis-container>
-              <kinesis-element :strength="30">
+              <kinesis-element :strength="110">
                 <img src="../assets/images/4.png" alt="">
               </kinesis-element>
               <kinesis-element :strength="50">
