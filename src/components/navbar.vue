@@ -3,7 +3,7 @@
     <div class="navbar__desktop" :class="{ navbaronscroll: scroll }">
       <div class="container">
         <div class="navbar-inner d-none d-md-block">
-          <div class="row align-items-xl-center">
+          <div class="row align-items-xl-center justify-lg-space-between">
             <div class="text-center text-xl-left col-xl-3">
               <router-link to="/" class="navbar-link">
                 <img

@@ -5,6 +5,10 @@ import store from './store'
 import './assets/scss/main.scss'
 import "aos/dist/aos.css"
 import AOS from 'aos'
+import { KinesisContainer, KinesisElement } from 'vue-kinesis'
+Vue.component('kinesis-container', KinesisContainer)
+Vue.component('kinesis-element', KinesisElement)
+
 Vue.config.productionTip = false
 new Vue({
   router,
