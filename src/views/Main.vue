@@ -1,33 +1,23 @@
 <template>
   <div class="main__wrapper">
-    <navbar />
-    <middle />
+    <toppart />
     <courses />
     <gototop />
+    <FooterContent />
   </div>
 </template>
 
 <script>
-import navbar from "@/components/navbar";
-import middle from "@/components/header";
+import toppart from '@/components/toppart';
 import gototop from "@/components/gototop";
 import courses from '@/components/courses';
+import FooterContent from '../components/footer.vue';
 export default {
   components: {
-    navbar,
-    middle,
+    toppart,
     gototop,
     courses,
+    FooterContent,
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.main__wrapper {
-  background-image: url("../assets/images/1.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-  margin-bottom: 400px;
-}
-</style>

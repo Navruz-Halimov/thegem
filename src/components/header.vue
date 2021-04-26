@@ -2,15 +2,15 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <div class="header__circle" style="position: relative;
+        <div class="col-md-9">
+          <!-- <div class="header__circle" style="position: relative;
     left: -271px;">
              <kinesis-container>
               <kinesis-element :strength="100">
                 <img src="../assets/images/3.png" alt="">
               </kinesis-element>
           </kinesis-container>
-          </div>
+          </div> -->
           <div class="header__inner">
             <h1 class="header-heading">Enroll Now & Learn</h1>
             <h4 class="header-second">
@@ -31,30 +31,33 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-            <kinesis-container>
-              <kinesis-element :strength="110">
-                <img src="../assets/images/4.png" alt="">
-              </kinesis-element>
-              <kinesis-element :strength="50">
-                <img src="../assets/images/2.png" alt="">
-              </kinesis-element>
-               <kinesis-element :strength="60">
-                <img src="../assets/images/5.png" alt="">
-              </kinesis-element>
-          </kinesis-container>
+        <div
+          class="col-md-3"
+        >
+          <!-- <kinesis-container>
+            <kinesis-element :strength="60">
+              <img src="../assets/images/4.png" alt="" class="circle2" />
+            </kinesis-element>
+            <kinesis-element :strength="30">
+              <img src="../assets/images/2.png" alt="" class="person" />
+            </kinesis-element>
+            <kinesis-element :strength="30">
+              <img src="../assets/images/5.png" alt="" class="triangle" />
+            </kinesis-element>
+          </kinesis-container> -->
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="laptop">
-            <img src="../assets/images/laptop.png" alt="" width="500" height="500">
+            <!-- <img src="../assets/images/laptop.png" alt="" width="500" height="500"> -->
           </div>
         </div>
         <div class="col-md-6">
           <div class="header-courses">
             <h3 class="header-courses__heading">
-              The Prodigious eLearning Courses for <br> you
+              The Prodigious eLearning Courses for <br />
+              you
             </h3>
             <p class="header-courses__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -81,7 +84,6 @@
 
 <script>
 export default {
-  
   data() {
     return {
       counter: null,
@@ -105,6 +107,63 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.triangle {
+  max-width: 153px;
+  width: 100%;
+  max-height: 174px;
+  height: 100%;
+}
+.circle2 {
+  width: 185px;
+  height: 173px;
+}
+.person {
+  width: 700px;
+  height: 873px;
+}
+.header__circle {
+  img {
+    max-width: 200px;
+    max-height: 169px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .person {
+    width: 400px;
+    height: 470px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-heading {
+    line-height: 80px !important;
+    font-size: 70px !important;
+  }
+  .header-second {
+    line-height: 50px !important;
+    font-size: 40px !important;
+  }
+  .header-text {
+    font-size: 19px !important;
+    line-height: 28px !important;
+  }
+}
+@media (max-width: 767px) {
+  .header-heading {
+    line-height: 60px !important;
+    font-size: 50px !important;
+  }
+  .header-second {
+    line-height: 40px !important;
+    font-size: 30px !important;
+  }
+  .header-btn {
+    font-size: 19px !important;
+    padding: 0 60px !important;
+  }
+}
 .header {
   font-family: "Jost", sans-serif;
   padding: 100px 21px 0;
@@ -163,7 +222,7 @@ export default {
       }
     }
   }
-  .laptop{
+  .laptop {
     margin-top: 200px;
     margin-bottom: 0;
     padding: 311px 0 0;
@@ -201,9 +260,10 @@ export default {
       background-color: #ad00f7;
       box-shadow: 4px 8px 0 0 rgb(115 79 32 / 11%);
       border: none;
-      transition: background-color .3s ease,border-color .3s ease;
-      &:focus,&:hover{
-            background-color: #030080;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      &:focus,
+      &:hover {
+        background-color: #030080;
       }
     }
   }

@@ -159,14 +159,18 @@
               </router-link>
             </li>
             <li class="navbar-mobile__item">
+              <div class="minisearch">
+                <form action="">
+                <input type="search">
+                <input type="submit">
+                </form>
+              </div>
               <router-link class="navbar-mobile__link" to="">
-                search
               </router-link>
             </li>
           </ul>
         </div>
       </div>
-      <div class="container"></div>
     </div>
   </div>
 </template>
