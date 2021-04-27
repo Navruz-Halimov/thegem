@@ -1,8 +1,8 @@
 <template>
-    <div class="header__wrapper">
+  <div class="header__wrapper">
     <navbar />
     <middle />
-    </div>
+  </div>
 </template>
 
 <script>

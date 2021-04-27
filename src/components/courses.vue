@@ -5,75 +5,149 @@
         <div class="popular-courses__title">
           Popular Courses
         </div>
-        <h4 class="popular-courses__heading">Choose your Category</h4>
+        <h4 class="popular-courses__heading">
+          Choose your Category
+        </h4>
       </div>
       <!-- /.popular-courses__header -->
       <div class="row mt-5">
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="popular-courses__item ml-3 mr-3 m-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/web-development.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">Development</p>
-              </router-link>
-        </div>
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/web-development.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                Development
+              </p>
+            </router-link>
+          </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-             <div class="popular-courses__item mt-4 ml-3 mr-3 m-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/growth.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">Business</p>
-              </router-link>
-        </div>
+          <div class="popular-courses__item mt-4 ml-3 mr-3 m-sm-0">
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/growth.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                Business
+              </p>
+            </router-link>
+          </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-               <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/development.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">IT and Software</p>
-              </router-link>
-        </div>
+          <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/development.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                IT and Software
+              </p>
+            </router-link>
+          </div>
         </div>
         <div class="col-md-3 col-sm-6 ">
-              <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/2905191.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">UI Design</p>
-              </router-link>
-        </div>
+          <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/2905191.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                UI Design
+              </p>
+            </router-link>
+          </div>
         </div>
       </div>
-       <div class="row mt-0 mt-md-5">
+      <div class="row mt-0 mt-md-5">
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="popular-courses__item mt-0 mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/graphic-design.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">UX Design</p>
-              </router-link>
-        </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
-             <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/target.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">Marketing</p>
-              </router-link>
-        </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
-               <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/photo.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">Photography</p>
-              </router-link>
-        </div>
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/graphic-design.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                UX Design
+              </p>
+            </router-link>
+          </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
-              <router-link to="" class="popular-courses__item-link">
-                  <img src="../assets/images/guitar.svg" alt="icon" class="popular-courses__item-img">
-                  <p class="popular-courses__item-title">Music</p>
-              </router-link>
+          <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/target.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                Marketing
+              </p>
+            </router-link>
+          </div>
         </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/photo.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                Photography
+              </p>
+            </router-link>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="popular-courses__item mt-4 mt-md-0 ml-3 mr-3 mr-sm-0 ml-sm-0">
+            <router-link
+              to=""
+              class="popular-courses__item-link"
+            >
+              <img
+                src="../assets/images/guitar.svg"
+                alt="icon"
+                class="popular-courses__item-img"
+              >
+              <p class="popular-courses__item-title">
+                Music
+              </p>
+            </router-link>
+          </div>
         </div>
       </div>
     </div>

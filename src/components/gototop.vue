@@ -1,11 +1,11 @@
 <template>
   <div class="gotop__wrapper">
     <div
+      id="scrollToTop"
       to=""
       class="gotop gotop-show"
-      id="scrollToTop"
       @click="scrollToTop()"
-    ></div>
+    />
   </div>
 </template>
 

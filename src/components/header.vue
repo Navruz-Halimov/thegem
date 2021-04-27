@@ -12,20 +12,28 @@
           </kinesis-container>
           </div> -->
           <div class="header__inner">
-            <h1 class="header-heading">Enroll Now & Learn</h1>
+            <h1 class="header-heading">
+              Enroll Now & Learn
+            </h1>
             <h4 class="header-second">
-              Get Access for Award Winning <br />
+              Get Access for Award Winning <br>
               Online Courses
             </h4>
             <p class="header-text">
-              Manage, track, and achieve your corporate learning goals <br />
+              Manage, track, and achieve your corporate learning goals <br>
               with TheGem LMS.
             </p>
             <div class="header-buttons__wrapper">
-              <button type="button" class="header-btn all-btn">
+              <button
+                type="button"
+                class="header-btn all-btn"
+              >
                 All Courses
               </button>
-              <button type="button" class="header-btn sign-btn">
+              <button
+                type="button"
+                class="header-btn sign-btn"
+              >
                 Sign up Free
               </button>
             </div>
@@ -56,7 +64,7 @@
         <div class="col-md-6">
           <div class="header-courses">
             <h3 class="header-courses__heading">
-              The Prodigious eLearning Courses for <br />
+              The Prodigious eLearning Courses for <br>
               you
             </h3>
             <p class="header-courses__text">
@@ -64,10 +72,13 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              ipsum <br />
+              ipsum <br>
               reprehenderit in voluptate velit esse cillum dolore.
             </p>
-            <button class="header-courses__btn" type="button">
+            <button
+              class="header-courses__btn"
+              type="button"
+            >
               Discover new Courses
             </button>
           </div>
