@@ -3,6 +3,7 @@
     <toppart />
     <courses />
     <gototop />
+    <projects />
     <FooterContent />
   </div>
 </template>
@@ -11,12 +12,14 @@
 import toppart from '@/components/toppart';
 import gototop from "@/components/gototop";
 import courses from '@/components/courses';
-import FooterContent from '../components/footer.vue';
+import projects from '@/components/projects';
+import FooterContent from '@/components/footer.vue';
 export default {
   components: {
     toppart,
     gototop,
     courses,
+    projects,
     FooterContent,
   }
 };

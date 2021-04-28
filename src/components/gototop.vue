@@ -24,8 +24,8 @@ export default {
   },
   methods: {
     scrollToTop() {
-         window.scrollTo({top: 0, behavior: 'smooth'});
-        console.log("gototop")
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      console.log("gototop");
     },
     onScroll(e) {
       this.windowTop = e.target.documentElement.scrollTop;
@@ -47,8 +47,9 @@ export default {
   display: inline-block;
   vertical-align: top;
 }
+
 .gotop {
-    cursor: pointer;
+  cursor: pointer;
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -65,7 +66,7 @@ export default {
   opacity: 0.3;
   transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
   z-index: 50;
-  &:hover{
+  &:hover {
     background-color: #30c3f0;
     color: #30c3f0;
     box-shadow: rgba(48, 195, 240, 0.7) 0px 8px 24px;

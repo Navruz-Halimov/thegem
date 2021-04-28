@@ -8,7 +8,7 @@
   }
   &-news {
     &__header {
-      font-family: "Jost", sans-serif;
+      font-family: $Jost;
       text-align: center;
       margin-bottom: 70px;
     }
@@ -50,7 +50,7 @@
       overflow: hidden;
     }
     &__item-body {
-      font-family: "Montserrat", sans-serif;
+      font-family: $Montserrat;
       font-size: 12px;
       border-radius: 0 0 50px 50px;
       padding: 35px 38px 50px !important;
@@ -93,7 +93,7 @@
       }
       .title {
         div {
-          font-family: "Jost", sans-serif;
+          font-family: $Jost;
           font-size: 20px;
           font-weight: 500;
           a {
@@ -108,7 +108,7 @@
         color: #030080;
         font-size: 16px;
         font-weight: 400;
-        font-family: "Montserrat", sans-serif;
+        font-family: $Montserrat;
       }
       .post-author-date-separator {
         color: #afafd2;
@@ -189,7 +189,7 @@
     margin: 0 auto;
     &-header {
       margin: 50px 0 50px;
-      font-family: "Jost", sans-serif;
+      font-family: $Jost;
       text-align: center;
     }
     &-title {
@@ -212,7 +212,7 @@
       }
 
       input {
-        font-family: "Montserrat", sans-serif;
+        font-family: $Montserrat;
         font-weight: 500;
         font-size: 16px;
         width: 100%;
@@ -229,7 +229,7 @@
         }
       }
       .textarea {
-        font-family: "Montserrat", sans-serif;
+        font-family: $Montserrat;
         font-weight: 500;
         font-size: 16px;
         resize: none;
@@ -281,7 +281,7 @@
   }
   &__information {
     &-item {
-      font-family: "Jost", sans-serif;
+      font-family: $Montserrat;
       text-align: center;
       i {
         font-size: 102px;
@@ -297,7 +297,7 @@
     }
     &-description {
       font-size: 16px;
-      font-family: "Montserrat", sans-serif;
+      font-family: $Montserrat;
       padding-bottom: 25px;
       color: #afafd2 !important;
       padding-left: 30px;
@@ -311,7 +311,7 @@
       line-height: 40px;
       font-size: 30px;
       font-weight: 500;
-      font-family: "Jost", sans-serif;
+      font-family: $Jost;
     }
     &-network {
       margin-top: 40px;
@@ -333,8 +333,6 @@
           color: white;
         }
       }
-      i {
-      }
     }
   }
   &__copyright {
@@ -343,11 +341,17 @@
     text-align: center;
     color: #afafd2;
     font-weight: 400;
-    font-family: "Montserrat", sans-serif;
+    font-family: $Montserrat;
+  }
+  &__scroll {
+    &-item {
+      position: relative;
+      left: -110px;
+    }
   }
 }
 
-// media query
+// media query footer
 @media (max-width: 1199px) {
   .footer {
     &-news {
@@ -432,6 +436,48 @@
       &-description {
         font-size: 14px;
       }
+    }
+    &__subscription-title {
+      font-size: 24px;
+    }
+    &__subscription-network {
+      margin-top: 15px;
+    }
+    &__copyright {
+      margin-top: 25px;
+    }
+  }
+}
+// footer animations
+[data-aos="new-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(400px);
+
+    &.aos-animate {
+      transform: translateX(0);
+    }
+  }
+}
+[data-aos="footer-news__title-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(-400px);
+
+    &.aos-animate {
+      transform: translateX(0);
     }
   }
 }
