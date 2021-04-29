@@ -10,7 +10,7 @@
             <div class="text-center text-xl-left col-xl-3">
               <router-link
                 to="/"
-                class="navbar-link"
+                class="navbar__logo-wrapper"
               >
                 <img
                   id="image"
@@ -121,10 +121,13 @@
         </div>
       </div>
     </div>
-    <div class="navbar-mobile d-block d-md-none">
+    <div
+      class="navbar-mobile d-block d-md-none"
+      :class="{togglebg:toggle}"
+    >
       <div
         class="w-100"
-        :class="{ navbaronscroll: scroll }"
+        :class="{ navbaronscroll:scroll,togglebg:toggle }"
       >
         <div class="navbar-mobile__header">
           <router-link
@@ -244,6 +247,7 @@
       </div>
     </div>
   </div>
+  <!-- end of navbar -->
 </template>
 
 <script>
@@ -253,7 +257,7 @@ export default {
       showModal: false,
       windowTop: 0,
       scroll: false,
-      display: false,
+      // display: false,
       toggle: false,
       newImageUrl: "logo_white",
     };
@@ -285,20 +289,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-.navbaronscroll {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  width: 100%;
-  z-index: 9999;
-  .navbar-menu__link {
-    color: #030080 !important;
-    &:hover {
-      color: #ff6a6d !important;
-    }
-  }
-}
-</style>

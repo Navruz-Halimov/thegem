@@ -5,69 +5,7 @@
     width: 170px;
     height: 40px;
   }
-  &-mobile {
-    &__inner {
-      position: fixed;
-      width: 100%;
-      top: 88px;
-      z-index: 9;
-      height: 100%;
-    }
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 4px 21px;
-    }
-    &__menu {
-      position: relative;
-      left: -120%;
-      background-color: #8261e2;
-      transition: 1s all linear;
-      &-open {
-        left: 0%;
-        transition: all 1s ease;
-      }
-    }
-    &__list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 40px;
-      padding-bottom: 100px;
-      width: 100%;
-      height: 100vh;
-    }
-    &__link {
-      display: block;
-      padding: 0 15px;
-      font-family: "Montserrat Ultra";
-      font-weight: bold;
-      color: #fff;
-      transition: all 0.3s ease-in;
-      &:hover {
-        color: #ff6a6d;
-      }
-      line-height: 48px !important;
-      font-size: 24px !important;
-    }
-    .minisearch {
-      opacity: 1;
-      visibility: visible;
-      transition: opacity 0.3s ease-in, visibility 0s linear 0s;
-      position: absolute;
-      opacity: 0;
-      visibility: hidden;
-      top: 50%;
-      padding: 40px;
-      background: transparent;
-      transform: translateY(-50%);
-      border: 0 none;
-      transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
-    }
-  }
-  &-link {
+  &__logo-wrapper {
     display: inline-block;
   }
   &-menu {
@@ -93,7 +31,7 @@
     &__link {
       display: block;
       padding: 0 15px;
-      font-family: "Jost", sans-serif;
+      font-family: $Jost;
       font-size: 18px;
       font-weight: 500;
       line-height: 30px;
@@ -131,7 +69,7 @@
     }
     &-input {
       width: 100%;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: $SansPro;
       font-size: 16px;
       font-weight: 400;
       height: 40px;
@@ -143,6 +81,95 @@
       border: 1px solid #dfdad3;
     }
   }
+  &-mobile {
+    &__inner {
+      position: fixed;
+      width: 100%;
+      top: 58px;
+      z-index: 1;
+      height: 100%;
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      padding: 4px 21px;
+      position: relative;
+      z-index: 999;
+    }
+    &__menu {
+      position: relative;
+      left: 0;
+      top: -120%;
+      background-color: rgba(130, 97, 226, 0.9);
+      transition: 1s all linear;
+      &-open {
+        top: 0;
+        transition: all 1s ease;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 100px;
+      width: 100%;
+      height: 100vh;
+    }
+    &__link {
+      display: block;
+      padding: 0 15px;
+      font-size: 24px;
+      font-family: $Jost;
+      font-weight: bold;
+      color: #fff;
+      transition: all 0.3s ease-in;
+      &:hover {
+        color: #ff6a6d;
+      }
+      line-height: 48px !important;
+      font-size: 24px !important;
+    }
+    .minisearch {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease-in, visibility 0s linear 0s;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      top: 50%;
+      padding: 40px;
+      background: transparent;
+      transform: translateY(-50%);
+      border: 0 none;
+      transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
+    }
+  }
+}
+.navbaronscroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  z-index: 5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  .navbar-menu__item {
+    padding: 20px 3px;
+  }
+  .navbar-menu__link {
+    color: #030080 !important;
+    &:hover {
+      color: #ff6a6d !important;
+    }
+  }
+}
+.togglebg {
+  background-color: rgba(130, 97, 226, 0.9) !important;
+  position: fixed;
+  z-index: 7;
 }
 @media screen and (max-width: 992px) {
   .navbar-search__modal {
@@ -153,6 +180,12 @@
 @media screen and (max-width: 768px) {
   .navbar-menu {
     display: block !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
   }
 }
 .block {
@@ -237,7 +270,6 @@
     display: inline-block;
   }
 }
-
 .grey {
   background-color: #030080;
 }

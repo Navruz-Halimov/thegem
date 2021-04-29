@@ -3,18 +3,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <!-- <div class="header__circle" style="position: relative;
-    left: -271px;">
-             <kinesis-container>
-              <kinesis-element :strength="100">
-                <img src="../assets/images/3.png" alt="">
+          <!-- <div
+            class="header__circle d-none d-md-block"
+            style="position: relative;
+    left: -271px;"
+          >
+            <kinesis-container>
+              <kinesis-element
+                :strength="50"
+              >
+                <img
+                  src="../assets/images/3.png"
+                  alt=""
+                >
               </kinesis-element>
-          </kinesis-container>
+            </kinesis-container>
           </div> -->
           <div class="header__inner">
             <h1 class="header-heading">
               Enroll Now & Learn
-            </h1>
+            </h1>          
             <h4 class="header-second">
               Get Access for Award Winning <br>
               Online Courses
@@ -42,17 +50,29 @@
         <div
           class="col-md-3"
         >
-          <!-- <kinesis-container>
-            <kinesis-element :strength="60">
-              <img src="../assets/images/4.png" alt="" class="circle2" />
-            </kinesis-element>
+          <kinesis-container>
+            <!-- <kinesis-element :strength="60">
+              <img
+                src="../assets/images/4.png"
+                alt=""
+                class="circle2"
+              >
+            </kinesis-element> -->
             <kinesis-element :strength="30">
-              <img src="../assets/images/2.png" alt="" class="person" />
+              <img
+                src="../assets/images/2.png"
+                alt=""
+                class="person"
+              >
             </kinesis-element>
-            <kinesis-element :strength="30">
-              <img src="../assets/images/5.png" alt="" class="triangle" />
-            </kinesis-element>
-          </kinesis-container> -->
+            <!-- <kinesis-element :strength="30">
+              <img
+                src="../assets/images/5.png"
+                alt=""
+                class="triangle"
+              >
+            </kinesis-element> -->
+          </kinesis-container> 
         </div>
       </div>
       <div class="row">
@@ -84,11 +104,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="header-couses">
-          {{counter}}
-          <button @click="counter++"> press me</button>
-          <input type="text" v-model="someText">
-        </div> -->
     </div>
   </header>
 </template>
@@ -97,40 +112,16 @@
 export default {
   data() {
     return {
-      counter: null,
-      someText: "",
+
     };
-  },
-  watch: {
-    counter(newVal, oldVal) {
-      console.log("oldwalue", oldVal, "newvalue", newVal);
-    },
-    someText() {
-      this.updateCounter();
-    },
-  },
-  methods: {
-    updateCounter() {
-      this.counter++;
-    },
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.triangle {
-  max-width: 153px;
-  width: 100%;
-  max-height: 174px;
-  height: 100%;
-}
-.circle2 {
-  width: 185px;
-  height: 173px;
-}
 .person {
-  width: 700px;
-  height: 873px;
+  width: 500px;
+  height: 673px;
 }
 .header__circle {
   img {
@@ -145,138 +136,6 @@ export default {
   .person {
     width: 400px;
     height: 470px;
-  }
-}
-@media (max-width: 1199px) {
-  .header-heading {
-    line-height: 80px !important;
-    font-size: 70px !important;
-  }
-  .header-second {
-    line-height: 50px !important;
-    font-size: 40px !important;
-  }
-  .header-text {
-    font-size: 19px !important;
-    line-height: 28px !important;
-  }
-}
-@media (max-width: 767px) {
-  .header-heading {
-    line-height: 60px !important;
-    font-size: 50px !important;
-  }
-  .header-second {
-    line-height: 40px !important;
-    font-size: 30px !important;
-  }
-  .header-btn {
-    font-size: 19px !important;
-    padding: 0 60px !important;
-  }
-}
-.header {
-  font-family: "Jost", sans-serif;
-  padding: 100px 21px 0;
-  &-heading {
-    line-height: 100px;
-    color: #fff;
-    letter-spacing: 0;
-    font-size: 90px;
-  }
-  &-second {
-    line-height: 70px;
-    color: #fff;
-    letter-spacing: 0;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  &-text {
-    color: #fff;
-    line-height: 30px;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 0;
-    margin: 45px 0 95px;
-  }
-  &-btn {
-    text-transform: none;
-    padding: 15px 30px;
-    letter-spacing: 0;
-    font-size: 24px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-    border-radius: 40px;
-    &.all-btn {
-      color: #fff;
-      background-color: rgba(255, 106, 109, 1);
-      transition: all 0.3s ease;
-      &:hover {
-        background-color: #fff;
-        color: #ff6a6d;
-      }
-    }
-    &.sign-btn {
-      background-color: #ff6a6d00;
-      border-style: solid;
-      border-width: 2px;
-      border-color: #ff6a6d;
-      box-shadow: 4px 8px 0 0 rgb(115 79 32 / 11%);
-      color: #fff;
-      transition: all 0.3s ease;
-      margin-left: 50px;
-      &:hover {
-        color: #fff;
-        background-color: #ff6a6d;
-      }
-    }
-  }
-  .laptop {
-    margin-top: 200px;
-    margin-bottom: 0;
-    padding: 311px 0 0;
-  }
-  &-courses {
-    margin-top: 200px;
-    margin-bottom: 0;
-    padding: 311px 0 0;
-    &__heading {
-      color: #030080;
-      font-size: 50px;
-      font-weight: 500;
-      font-family: "Jost", sans-serif;
-    }
-    &__text {
-      color: #030080;
-      line-height: 30px;
-      font-size: 16px;
-      font-weight: 400;
-      font-family: "Montserrat", sans-serif;
-      margin: 50px 0 0;
-    }
-    &__btn {
-      cursor: pointer;
-      padding: 15px 25px 16px;
-      margin: 60px 0 0;
-      line-height: 1;
-      color: #fff;
-      font-weight: 500;
-      font-family: "Jost", sans-serif;
-      font-size: 19px;
-      letter-spacing: 0.05em;
-      line-height: 1;
-      border-radius: 25px 25px 25px 25px;
-      background-color: #ad00f7;
-      box-shadow: 4px 8px 0 0 rgb(115 79 32 / 11%);
-      border: none;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
-      &:focus,
-      &:hover {
-        background-color: #030080;
-      }
-    }
   }
 }
 </style>
