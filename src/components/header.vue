@@ -2,23 +2,7 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
-          <!-- <div
-            class="header__circle d-none d-md-block"
-            style="position: relative;
-    left: -271px;"
-          >
-            <kinesis-container>
-              <kinesis-element
-                :strength="50"
-              >
-                <img
-                  src="../assets/images/3.png"
-                  alt=""
-                >
-              </kinesis-element>
-            </kinesis-container>
-          </div> -->
+        <div class="col-md-8">
           <div class="header__inner">
             <h1 class="header-heading">
               Enroll Now & Learn
@@ -48,28 +32,35 @@
           </div>
         </div>
         <div
-          class="col-md-3"
+          class="col-md-4"
         >
-          <kinesis-container>
-            <!-- <kinesis-element :strength="60">
+          <kinesis-container class="person__wrapper">
+            <!-- <kinesis-element
+              :strength="50"
+              event="scroll"
+            >
               <img
                 src="../assets/images/4.png"
                 alt=""
-                class="circle2"
+                class="circle"
               >
             </kinesis-element> -->
-            <kinesis-element :strength="30">
+            <kinesis-element
+              :strength="50"
+            >
               <img
                 src="../assets/images/2.png"
                 alt=""
                 class="person"
               >
             </kinesis-element>
-            <!-- <kinesis-element :strength="30">
+            <!-- <kinesis-element
+              :strength="50"
+            >
               <img
-                src="../assets/images/5.png"
+                src="../assets/images/3.png"
                 alt=""
-                class="triangle"
+                class=""
               >
             </kinesis-element> -->
           </kinesis-container> 
@@ -77,8 +68,39 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="laptop">
-            <!-- <img src="../assets/images/laptop.png" alt="" width="500" height="500"> -->
+          <div
+            class="header__laptop"
+          >
+            <kinesis-container :audio="audio">
+              <kinesis-audio 
+                :audio-index="10"
+              >
+                <kinesis-element
+                  :strength="10" 
+                  type="depth"
+                >
+                  <img
+                    src="../assets/images/6.png"
+                    alt=""
+                    class=""
+                    style="width:500px; height:600px;"
+                  >
+                </kinesis-element>
+              </kinesis-audio>
+            </kinesis-container>
+            <kinesis-container>
+              <kinesis-element
+                :strength="10"
+              >
+                <img
+                  src="../assets/images/7.png"
+                  alt=""
+                  style="position: relative;
+top: -480px;
+left: 15px;"
+                >
+              </kinesis-element>
+            </kinesis-container>
           </div>
         </div>
         <div class="col-md-6">
@@ -118,20 +140,26 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.person {
-  width: 500px;
-  height: 673px;
-}
-.header__circle {
-  img {
-    max-width: 200px;
-    max-height: 169px;
-    width: 100%;
-    height: 100%;
-  }
-}
 
+
+
+
+
+
+
+
+
+<style lang="scss" scoped>
+.circle{
+  position: relative;left:-100px; z-index: -1;}
+.person__wrapper{
+  max-width: 500px;
+  max-height: 673px;
+}
+.person {
+width: 500px;
+height: 600px;
+}
 @media screen and (max-width: 1800px) {
   .person {
     width: 400px;

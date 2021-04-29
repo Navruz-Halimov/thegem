@@ -5,7 +5,7 @@
     line-height: 100px;
     color: #fff;
     letter-spacing: 0;
-    font-size: 90px;
+    font-size: 88px;
   }
   &-second {
     line-height: 70px;
@@ -56,11 +56,6 @@
       }
     }
   }
-  .laptop {
-    margin-top: 200px;
-    margin-bottom: 0;
-    padding: 311px 0 0;
-  }
   &-courses {
     margin-top: 200px;
     margin-bottom: 0;
@@ -101,16 +96,21 @@
       }
     }
   }
+  &__laptop {
+    margin-top: 200px;
+    margin-bottom: 0;
+    padding: 311px 0 0;
+  }
 }
 // header media query
 @media (max-width: 1199px) {
   .header-heading {
     line-height: 80px !important;
-    font-size: 70px !important;
+    font-size: 60px !important;
   }
   .header-second {
     line-height: 50px !important;
-    font-size: 40px !important;
+    font-size: 30px !important;
   }
   .header-text {
     font-size: 19px !important;
@@ -121,11 +121,11 @@
 @media (max-width: 767px) {
   .header-heading {
     line-height: 60px !important;
-    font-size: 50px !important;
+    font-size: 40px !important;
   }
   .header-second {
     line-height: 40px !important;
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
   .header-btn {
     font-size: 19px !important;

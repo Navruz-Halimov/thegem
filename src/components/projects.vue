@@ -21,6 +21,7 @@
                   :value="value"
                   :format-value="formatToPrice"
                   :duration="5000"
+                  :delay="10"
                 />
                 <span class="projects__title">Topics Learned</span>
               </div>
@@ -44,6 +45,7 @@
                   :value="value2"
                   :format-value="format"
                   :duration="5000"
+                  :delay="10"
                 />
                 <span class="projects__title">Students Genius</span>
               </div>
@@ -67,6 +69,7 @@
                   :value="value3"
                   :format-value="format"
                   :duration="5000"
+                  :delay="10"
                 />
                 <span class="projects__title">Tests Taken Thats a Lot
                 </span>
@@ -91,6 +94,7 @@
                   :value="value4"
                   :format-value="formatToPrice"
                   :duration="5000"
+                  :delay="10"
                 />
                 <span class="projects__title">Instructors all Trained
                 </span>

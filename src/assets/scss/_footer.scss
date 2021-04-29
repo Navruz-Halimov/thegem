@@ -458,7 +458,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    transform: translateX(400px);
+    transform: translateX(300px);
 
     &.aos-animate {
       transform: translateX(0);
@@ -474,7 +474,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    transform: translateX(-400px);
+    transform: translateX(-300px);
 
     &.aos-animate {
       transform: translateX(0);
