@@ -35,6 +35,7 @@
     &.all-btn {
       color: #fff;
       background-color: rgba(255, 106, 109, 1);
+      box-shadow: 4px 8px 0 0 rgb(115 79 32 / 11%);
       transition: all 0.3s ease;
       &:hover {
         background-color: #fff;
@@ -57,7 +58,7 @@
     }
   }
   &-courses {
-    margin-top: 200px;
+    margin-top: 400px;
     margin-bottom: 0;
     padding: 311px 0 0;
     &__heading {
@@ -97,10 +98,20 @@
     }
   }
   &__laptop {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 0;
     padding: 311px 0 0;
+    position: relative;
   }
+}
+.laptop__img {
+  position: absolute;
+  top: 456px;
+  left: 88px;
+}
+.laptop {
+  width: 100%;
+  height: auto;
 }
 // header media query
 @media (max-width: 1199px) {
@@ -119,6 +130,19 @@
 }
 
 @media (max-width: 767px) {
+  .header__laptop {
+    padding: 0;
+    margin: 0;
+  }
+  .laptop__img {
+    position: absolute;
+    top: 120px;
+    left: 33px;
+  }
+  .header-courses {
+    margin-top: 0;
+    padding-top: 0;
+  }
   .header-heading {
     line-height: 60px !important;
     font-size: 40px !important;
@@ -129,6 +153,42 @@
   }
   .header-btn {
     font-size: 19px !important;
-    padding: 0 60px !important;
+    padding: 4px 0 !important;
+    width: 200px;
   }
+}
+@media screen and (max-width: 576px) {
+  .laptop {
+    top: -250px;
+    left: 15px;
+  }
+  .header {
+    &-btn {
+      margin-top: 20px;
+      margin-left: 0;
+      display: block;
+    }
+    .sign-btn {
+      margin-left: 0;
+    }
+    &-text {
+      margin-top: 25px;
+      margin-bottom: 35px;
+    }
+  }
+}
+.some {
+  position: relative;
+}
+.some::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/2.png");
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 600px;
+  // left: -100px;
+  z-index: 12;
+  background-size: contain;
+  background-position: left top;
 }

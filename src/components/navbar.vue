@@ -26,9 +26,9 @@
                 <li class="navbar-menu__item">
                   <router-link
                     class="navbar-menu__link"
-                    to=""
+                    to="/news"
                   >
-                    Home
+                    News
                   </router-link>
                 </li>
                 <li class="navbar-menu__item">

@@ -1,11 +1,13 @@
 <template>
-  <div class="main__wrapper">
-    <toppart />
-    <courses />
-    <gototop />
-    <projects />
-    <FooterContent />
-  </div>
+  <kinesis-container class="outer__wrapper">
+    <div class="main__wrapper">
+      <toppart />
+      <courses />
+      <gototop />
+      <projects />
+      <FooterContent />
+    </div>
+  </kinesis-container>
 </template>
 
 <script>

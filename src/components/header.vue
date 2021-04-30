@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12 col-lg-8">
           <div class="header__inner">
             <h1 class="header-heading">
               Enroll Now & Learn
@@ -32,38 +32,14 @@
           </div>
         </div>
         <div
-          class="col-md-4"
+          class="col-md-12 col-lg-4"
         >
-          <kinesis-container class="person__wrapper">
-            <!-- <kinesis-element
-              :strength="50"
-              event="scroll"
-            >
-              <img
-                src="../assets/images/4.png"
-                alt=""
-                class="circle"
-              >
-            </kinesis-element> -->
-            <kinesis-element
-              :strength="50"
-            >
-              <img
-                src="../assets/images/2.png"
-                alt=""
-                class="person"
-              >
-            </kinesis-element>
-            <!-- <kinesis-element
-              :strength="50"
-            >
-              <img
-                src="../assets/images/3.png"
-                alt=""
-                class=""
-              >
-            </kinesis-element> -->
-          </kinesis-container> 
+          <kinesis-element
+            :strength="50"
+            event="scroll"
+          >
+            <div class="some" />
+          </kinesis-element>
         </div>
       </div>
       <div class="row">
@@ -71,36 +47,30 @@
           <div
             class="header__laptop"
           >
-            <kinesis-container :audio="audio">
-              <kinesis-audio 
-                :audio-index="10"
-              >
-                <kinesis-element
-                  :strength="10" 
-                  type="depth"
-                >
-                  <img
-                    src="../assets/images/6.png"
-                    alt=""
-                    class=""
-                    style="width:500px; height:600px;"
-                  >
-                </kinesis-element>
-              </kinesis-audio>
-            </kinesis-container>
-            <kinesis-container>
+            <kinesis-audio :audio-index="10">
               <kinesis-element
-                :strength="10"
+                :strength="
+                  10" 
+                type="depth"
               >
                 <img
-                  src="../assets/images/7.png"
+                  src="../assets/images/6.png"
                   alt=""
-                  style="position: relative;
-top: -480px;
-left: 15px;"
+                  class=""
+                  style="width:100%; height:auto;"
                 >
               </kinesis-element>
-            </kinesis-container>
+            </kinesis-audio>
+            <kinesis-element
+              class="laptop__img"
+              :strength="10"
+            >
+              <img
+                src="../assets/images/7.png"
+                alt=""
+                class="laptop"
+              >
+            </kinesis-element>
           </div>
         </div>
         <div class="col-md-6">
@@ -139,31 +109,5 @@ export default {
   }
 };
 </script>
-
-
-
-
-
-
-
-
-
-
 <style lang="scss" scoped>
-.circle{
-  position: relative;left:-100px; z-index: -1;}
-.person__wrapper{
-  max-width: 500px;
-  max-height: 673px;
-}
-.person {
-width: 500px;
-height: 600px;
-}
-@media screen and (max-width: 1800px) {
-  .person {
-    width: 400px;
-    height: 470px;
-  }
-}
 </style>
