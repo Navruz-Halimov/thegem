@@ -47,11 +47,15 @@
           <div
             class="header__laptop"
           >
-            <kinesis-audio :audio-index="10">
+            <!-- <kinesis-audio
+              :audio-index="10"
+              name="ima"
+            >
               <kinesis-element
                 :strength="
                   10" 
                 type="depth"
+                name="asdadsa"
               >
                 <img
                   src="../assets/images/6.png"
@@ -60,7 +64,7 @@
                   style="width:100%; height:auto;"
                 >
               </kinesis-element>
-            </kinesis-audio>
+            </kinesis-audio> -->
             <kinesis-element
               class="laptop__img"
               :strength="10"
